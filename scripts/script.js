@@ -1,7 +1,6 @@
 "use strict";
 
 const thumbs = document.getElementById("thumbs");
-const largeImg = document.getElementById("largeImg");
 
 thumbs.addEventListener("click", event => {
   event.preventDefault();
@@ -11,5 +10,6 @@ thumbs.addEventListener("click", event => {
   }
 
   const src = target.closest("a").href;
+  const largeImg = document.getElementById("largeImg");
   largeImg.src = src;
 });
